@@ -16,6 +16,7 @@ fn App() -> impl IntoView {
                 set_count.update(|n| *n += 1);
             }
             class:red=move || count.get() % 2 == 1
+            // class=("button-20", move || count.get()%2 == 1)
         >
             "Click me: "
             // on nightly this is {move || count()};
